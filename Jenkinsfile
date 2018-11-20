@@ -14,6 +14,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
+            sh 'jx step helm init --client-only'
             sh 'jx step helm build'
           }
         }
