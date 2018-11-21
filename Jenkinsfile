@@ -6,7 +6,7 @@ pipeline {
     label "jenkins-maven"
   }
   environment {
-    DEPLOY_NAMESPACE = "swad-production"
+    DEPLOY_NAMESPACE = "teama-production"
     TILLER_NAMESPACE = "kube-system"
     HTTP_PROXY = "http://172.22.100.64:5865"
     NO_PROXY = "jenkins-x*,.local,jenkins-x-chartmuseum,10.0.0.0/8"
